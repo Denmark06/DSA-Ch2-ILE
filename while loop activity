@@ -1,0 +1,12 @@
+let correctNumber = Math.floor(Math.random() * 10) + 1;
+let userGuess = prompt("Guess a number between 1 and 10:");
+while (userGuess != correctNumber) {
+  if (userGuess < correctNumber) {
+    console.log("Too low, try again.");
+  } else if (userGuess > correctNumber) {
+    console.log("Too high, try again.");
+  }
+  userGuess = prompt("Guess a number between 1 and 10:");
+}
+
+console.log("Correct! You guessed the number.");
