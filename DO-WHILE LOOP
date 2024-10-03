@@ -1,0 +1,8 @@
+let correctPassword = "BSCS2D"
+let userPassword = prompt("Enter your password:")
+do {
+    if (userPassword !== correctPassword) {
+        userPassword = prompt('incorrect, try again. Enter your password:');
+    }
+} while  (userPassword !== correctPassword);
+console.log("Access granted.");
